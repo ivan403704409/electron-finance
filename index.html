@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+      body{
+        background-color: #000;
+        color: #fff;
+        font-family: 'Source Code Pro','arial';
+        text-align: center;
+        -webkit-user-select: none;
+      }
+      .the-price{
+        font-size: 35px;
+      }
+      .up{
+        color: green;
+      }
+      .down{
+        color: red;
+      }
+    </style>
+  </head>
+  <body style="-webkit-app-region: drag;">
+    <h3>Current Share Price: DJI</h3>
+    <div class="the-price" id="price"></div>
+    <div class="up-down" id="priceHistory"></div>
+
+    <script type="text/javascript">
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
