@@ -1,4 +1,5 @@
-let request = require('request')
+// let request = require('request')
+import request from 'request'
       fetchData()
       setInterval(function (){
         fetchData()
